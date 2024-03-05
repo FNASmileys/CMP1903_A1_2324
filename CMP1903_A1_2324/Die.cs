@@ -14,9 +14,17 @@ namespace CMP1903_A1_2324
          */
 
         //Property
-
+        int currentRoll = 0;
+        
+        static Random rd = new Random();
 
         //Method
+        public int Roll() 
+        {
+            currentRoll = rd.Next(1, 7);
+            Console.WriteLine("the dice has been rolled and landed on " + currentRoll.ToString());
+            return currentRoll;
+        }
 
 
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,20 @@ namespace CMP1903_A1_2324
 
         //Methods
 
+        Die die1 = new Die();
+        Die die2 = new Die();
+        Die die3 = new Die();
+
+        public int Play()
+        {
+            int Number1 = die1.Roll();
+            int Number2 = die2.Roll();
+            int Number3 = die3.Roll();
+
+            int sum = Number1 + Number2 + Number3;
+            
+            ;
+            return sum;
+        }
     }
 }
