@@ -4,24 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMP1903_A1_2324
+namespace CMP1903_A1_2324 
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            /*
-             * Create a Game object and call its methods.
-             * Create a Testing object to verify the output and operation of the other classes.
-             */
+  internal class Program 
+  {
+    static void Main(string[] args) {
+      /*
+      * Create a Game object and call its methods.
+      * Create a Testing object to verify the output and operation of the other classes.
+      */
 
-            Game game = new Game();
-            Testing testing = new Testing();
-            testing.Test();
-            Console.WriteLine("the total of the three rolls was: " + game.Play().ToString());
-            Console.ReadLine();
+      //initialises all methods required for the program to run as objects and runs them in order
+      private Game _game = new Game();
+      private Testing _testing = new Testing();
+      _testing.Test();
+      Console.WriteLine("the total of the three rolls was: " + _game.Play().ToString());
+      Console.ReadLine();
 
 
-        }
+
     }
+  }
 }
+
+
+
+                
+    
+
